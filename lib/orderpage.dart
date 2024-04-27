@@ -42,7 +42,7 @@ class _OrderPageState extends State<OrderPage> {
       true,
       ScanMode.BARCODE,
     );
-    print(barcodeScanRes);
+    // print(barcodeScanRes);
     if (!mounted) return;
 
     setState(() {
@@ -51,8 +51,8 @@ class _OrderPageState extends State<OrderPage> {
   }
 
   _updateScannedProducts(queriesProducts) async {
-    print('queriesProducts');
-    print(queriesProducts);
+    // print('queriesProducts');
+    // print(queriesProducts);
     List<Product> newScannedProducts = [];
     num tempPrice = 0;
     for (var product in queriesProducts) {
